@@ -1,0 +1,37 @@
+{
+	"dialogue_pos": "left",
+	"position": [-150, -200],
+	"scale": 0.8,
+	"animations": [{
+		"anim": "talk",
+		"loop_offsets": [0, 0],
+		"idle_offsets": [0, 0],
+		"loop_name": "normal0",
+		"idle_name": "normal0006"
+	}, {
+		"loop_offsets": [0, 0],
+		"anim": "annoyed",
+		"idle_offsets": [0, 0],
+		"loop_name": "annoyed0",
+		"idle_name": "annoyed0006"
+	}, {
+		"loop_offsets": [0, 0],
+		"anim": "annoyedStatic",
+		"idle_offsets": [0, 0],
+		"loop_name": "annoyed0006",
+		"idle_name": "annoyed0006"
+	}, {
+		"loop_offsets": [0, 0],
+		"anim": "upset",
+		"idle_offsets": [0, 0],
+		"loop_name": "upset0",
+		"idle_name": "upset0006"
+	}, {
+		"loop_offsets": [0, 0],
+		"anim": "angry",
+		"idle_offsets": [0, 0],
+		"loop_name": "angry0",
+		"idle_name": "angry0006"
+	}],
+	"image": "AM_dialogue"
+}

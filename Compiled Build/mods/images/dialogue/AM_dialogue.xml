@@ -1,35 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
 <TextureAtlas imagePath="AM_dialogue.png">
-<SubTexture name="AM_dialogue Normal0000" x="2664" y="0" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue Normal0001" x="2664" y="0" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue Normal0002" x="3460" y="0" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue Normal0003" x="3460" y="0" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue Normal0004" x="0" y="891" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue Normal0005" x="0" y="891" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue Normal0006" x="797" y="891" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue Normal0007" x="797" y="891" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue annoyed0000" x="3460" y="868" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue annoyed0001" x="3460" y="868" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue annoyed0002" x="3460" y="1736" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue annoyed0003" x="3460" y="1736" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue annoyed0004" x="1590" y="891" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue annoyed0005" x="1590" y="891" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue annoyed0006" x="0" y="1762" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue annoyed0007" x="0" y="1762" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue upset0000" x="2664" y="868" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue upset0001" x="2664" y="868" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue upset0002" x="0" y="2633" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue upset0003" x="0" y="2633" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue upset0004" x="793" y="1762" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue upset0005" x="793" y="1762" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue upset0006" x="1590" y="1762" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue upset0007" x="1590" y="1762" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue angry0000" x="797" y="2633" width="902" height="865" frameX="0" frameY="-45" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue angry0001" x="797" y="2633" width="902" height="865" frameX="0" frameY="-45" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue angry0002" x="1765" y="0" width="899" height="875" frameX="-7" frameY="-38" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue angry0003" x="1765" y="0" width="899" height="875" frameX="-7" frameY="-38" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue angry0004" x="873" y="0" width="892" height="883" frameX="-14" frameY="-33" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue angry0005" x="873" y="0" width="892" height="883" frameX="-14" frameY="-33" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue angry0006" x="0" y="0" width="873" height="891" frameX="-27" frameY="-26" frameWidth="912" frameHeight="917" />
-<SubTexture name="AM_dialogue angry0007" x="0" y="0" width="873" height="891" frameX="-27" frameY="-26" frameWidth="912" frameHeight="917" />
+<SubTexture name="normal0000" x="2664" y="0" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="normal0001" x="2664" y="0" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="normal0002" x="3460" y="0" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="normal0003" x="3460" y="0" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="normal0004" x="0" y="891" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
+<SubTexture name="normal0005" x="0" y="891" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
+<SubTexture name="normal0006" x="797" y="891" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
+<SubTexture name="normal0007" x="797" y="891" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
+<SubTexture name="annoyed0000" x="3460" y="868" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="annoyed0001" x="3460" y="868" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="annoyed0002" x="3460" y="1736" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="annoyed0003" x="3460" y="1736" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="annoyed0004" x="1590" y="891" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
+<SubTexture name="annoyed0005" x="1590" y="891" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
+<SubTexture name="annoyed0006" x="0" y="1762" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
+<SubTexture name="annoyed0007" x="0" y="1762" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
+<SubTexture name="upset0000" x="2664" y="868" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="upset0001" x="2664" y="868" width="796" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="upset0002" x="0" y="2633" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="upset0003" x="0" y="2633" width="797" height="868" frameX="-115" frameY="-3" frameWidth="912" frameHeight="917" />
+<SubTexture name="upset0004" x="793" y="1762" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
+<SubTexture name="upset0005" x="793" y="1762" width="797" height="871" frameX="-115" frameY="-1" frameWidth="912" frameHeight="917" />
+<SubTexture name="upset0006" x="1590" y="1762" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
+<SubTexture name="upset0007" x="1590" y="1762" width="793" height="871" frameX="-116" frameY="0" frameWidth="912" frameHeight="917" />
+<SubTexture name="angry0000" x="797" y="2633" width="902" height="865" frameX="0" frameY="-45" frameWidth="912" frameHeight="917" />
+<SubTexture name="angry0001" x="797" y="2633" width="902" height="865" frameX="0" frameY="-45" frameWidth="912" frameHeight="917" />
+<SubTexture name="angry0002" x="1765" y="0" width="899" height="875" frameX="-7" frameY="-38" frameWidth="912" frameHeight="917" />
+<SubTexture name="angry0003" x="1765" y="0" width="899" height="875" frameX="-7" frameY="-38" frameWidth="912" frameHeight="917" />
+<SubTexture name="angry0004" x="873" y="0" width="892" height="883" frameX="-14" frameY="-33" frameWidth="912" frameHeight="917" />
+<SubTexture name="angry0005" x="873" y="0" width="892" height="883" frameX="-14" frameY="-33" frameWidth="912" frameHeight="917" />
+<SubTexture name="angry0006" x="0" y="0" width="873" height="891" frameX="-27" frameY="-26" frameWidth="912" frameHeight="917" />
+<SubTexture name="angry0007" x="0" y="0" width="873" height="891" frameX="-27" frameY="-26" frameWidth="912" frameHeight="917" />
 </TextureAtlas>

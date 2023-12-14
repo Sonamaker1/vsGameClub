@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "bf",
-		"player2": "dad",
+		"player2": "AM",
 		"events": [],
 		"notes": [
 			{
@@ -4731,7 +4731,7 @@
 		"gfVersion": "gf",
 		"song": "outlast",
 		"needsVoices": true,
-		"stage": "stage",
+		"stage": "studio",
 		"bpm": 140,
 		"speed": 2.1
 	}

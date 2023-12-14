@@ -60,7 +60,7 @@
 	"image": "characters/AM",
 	"position": [
 		-240,
-		-340
+		-445
 	],
 	"healthicon": "icon-AM",
 	"flip_x": false,
@@ -70,8 +70,8 @@
 		248
 	],
 	"camera_position": [
-		0,
-		0
+		340,
+		440
 	],
 	"sing_duration": 6.1,
 	"scale": 0.51

@@ -10704,10 +10704,10 @@
 			}
 		],
 		"events": [],
-		"player2": "dad",
+		"player2": "AMphase2",
 		"song": "final-straw",
 		"needsVoices": true,
-		"stage": "stage",
+		"stage": "studio",
 		"speed": 3.2,
 		"bpm": 170
 	}

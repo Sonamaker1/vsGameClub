@@ -2694,10 +2694,10 @@
 			}
 		],
 		"events": [],
-		"player2": "dad",
+		"player2": "creature",
 		"song": "warning-message",
 		"needsVoices": true,
-		"stage": "stage",
+		"stage": "studio",
 		"speed": 2.4,
 		"bpm": 158
 	}

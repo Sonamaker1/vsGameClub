@@ -5918,10 +5918,10 @@
 			}
 		],
 		"events": [],
-		"player2": "dad",
+		"player2": "AM",
 		"song": "outlast",
 		"needsVoices": true,
-		"stage": "stage",
+		"stage": "studio",
 		"speed": 2.7,
 		"bpm": 140
 	}

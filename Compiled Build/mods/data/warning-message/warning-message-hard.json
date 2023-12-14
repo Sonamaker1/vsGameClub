@@ -1,9 +1,9 @@
 {
 	"song": {
 		"speed": 2.7,
-		"stage": "stage",
+		"stage": "studio",
 		"player1": "bf",
-		"player2": "dad",
+		"player2": "creature",
 		"events": [],
 		"notes": [
 			{

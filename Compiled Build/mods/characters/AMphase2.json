@@ -59,8 +59,8 @@
 	"no_antialiasing": false,
 	"image": "characters/AMphase2",
 	"position": [
-		-100,
-		-330
+		-240,
+		-445
 	],
 	"healthicon": "icon-AMphase2",
 	"flip_x": false,
@@ -70,8 +70,8 @@
 		248
 	],
 	"camera_position": [
-		0,
-		0
+		340,
+		440
 	],
 	"sing_duration": 6.1,
 	"scale": 0.51

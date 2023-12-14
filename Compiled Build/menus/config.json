@@ -1,4 +1,5 @@
 {
   "DiscordClient": [["clientID", "863222024192262205"]],
-  "MainMenuState": [["psychEngineVersion", "0.6.3+"]]
+  "MainMenuState": [["psychEngineVersion", "0.6.3+"]],
+  "options.OptionsState": [["darkModeEnabled",true]]
 }

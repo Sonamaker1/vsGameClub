@@ -3,34 +3,11 @@ addCharacterToList('creature', 'dad')
 addCharacterToList('AM', 'dad')
 end
 
-function onCreatePost()
-setProperty('camGame.alpha', 0)
-setProperty('camHUD.alpha', 0)
-setProperty('boyfriend.alpha', 0)
-triggerEvent('camera_target', 'dad', '100')
-end
-
-function onSongStart()
-setProperty('camGame.alpha', 1)
-doTweenAlpha('1', 'camGame', 0,1.5)
-end
-
 
 function onStepHit()
-if curStep == 32 or curStep == 64 or curStep == 96 or curStep == 736 then
+if curStep == 736 then
 doTweenAlpha('1', 'camGame', 0,1.5)
 setProperty('camGame.alpha', 1)
-elseif curStep == 30 or curStep == 94 then
-setProperty('boyfriend.alpha', 1)
-setProperty('dad.alpha', 0)
-elseif curStep == 62 then
-setProperty('boyfriend.alpha', 0)
-setProperty('dad.alpha', 1)
-elseif curStep == 126 then
-setProperty('dad.alpha', 1)
-elseif curStep == 128 then
-doTweenAlpha('1', 'camGame', 1,1)
-doTweenAlpha('2', 'camHUD', 1,1)
 
 elseif curStep == 1040 then
 setProperty('boyfriend.x', 700)
@@ -74,7 +51,7 @@ if n == 'camera_target' then
 if v1 == 'all' then
 folowcam = true
 else
- folowcam = false
+    folowcam = false
 end
 end
 
@@ -82,12 +59,12 @@ if n == 'WBG' then
 if v1 == 'Bon' or v1 == 'Won' then
 setProperty('bg.visible', false)
 else
- setProperty('bg.visible', true)
+    setProperty('bg.visible', true)
 end
 end
 end
 
-folowcam = true
+folowcam = false
 camX = 1900
 camY = 900
 function onUpdate()
@@ -107,7 +84,7 @@ setProperty('camFollow.x', camX + 50)
 setProperty('camFollow.y', camY)
 
 else
-setProperty('camFollow.x', camX)
+    setProperty('camFollow.x', camX)
 setProperty('camFollow.y', camY)
 end
 
@@ -126,7 +103,7 @@ setProperty('camFollow.x', camX + 50)
 setProperty('camFollow.y', camY)
 
 else
-setProperty('camFollow.x', camX)
+    setProperty('camFollow.x', camX)
 setProperty('camFollow.y', camY)
 end
 end

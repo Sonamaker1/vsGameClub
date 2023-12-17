@@ -15,7 +15,7 @@ setTextColor('scoreTxt', rgbToHex(getProperty('boyfriend.healthColorArray')))
 end
 
 function onUpdate()
-setProperty("scoreTxt2._frame.frame.width", 1 - getProperty('healthBar.percent') * 6.5 + 960)
+setProperty("scoreTxt2._frame.frame.width", 1 - getProperty('healthBar.percent') * 6.7 + 970)
 setProperty('scoreTxt2.scale.x', getProperty('scoreTxt.scale.x'))
 setProperty('scoreTxt2.scale.y', getProperty('scoreTxt.scale.y'))
 setTextString('scoreTxt2',getTextString('scoreTxt'))

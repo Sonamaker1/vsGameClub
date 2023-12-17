@@ -7,6 +7,7 @@ function onCreatePost()
 setProperty('camGame.alpha', 0)
 setProperty('camHUD.alpha', 0)
 setProperty('boyfriend.alpha', 0)
+triggerEvent('camera_target', 'dad', '100')
 end
 
 function onSongStart()
@@ -86,12 +87,51 @@ end
 end
 end
 
-folowcam = false
+folowcam = true
 camX = 1900
 camY = 900
 function onUpdate()
 if folowcam then
+if mustHitSection then
+if getProperty('boyfriend.animation.curAnim.name') == 'singLEFT' then
+setProperty('camFollow.x', camX - 50)
+setProperty('camFollow.y', camY)
+elseif getProperty('boyfriend.animation.curAnim.name') == 'singDOWN' then
+setProperty('camFollow.x', camX)
+setProperty('camFollow.y', camY + 50)
+elseif getProperty('boyfriend.animation.curAnim.name') == 'singUP' then
+setProperty('camFollow.x', camX)
+setProperty('camFollow.y', camY - 50)
+elseif getProperty('boyfriend.animation.curAnim.name') == 'singRIGHT' then
+setProperty('camFollow.x', camX + 50)
+setProperty('camFollow.y', camY)
+
+else
 setProperty('camFollow.x', camX)
 setProperty('camFollow.y', camY)
+end
+
+elseif not mustHitSection then
+if getProperty('dad.animation.curAnim.name') == 'singLEFT' then
+setProperty('camFollow.x', camX - 50)
+setProperty('camFollow.y', camY)
+elseif getProperty('dad.animation.curAnim.name') == 'singDOWN' then
+setProperty('camFollow.x', camX)
+setProperty('camFollow.y', camY + 50)
+elseif getProperty('dad.animation.curAnim.name') == 'singUP' then
+setProperty('camFollow.x', camX)
+setProperty('camFollow.y', camY - 50)
+elseif getProperty('dad.animation.curAnim.name') == 'singRIGHT' then
+setProperty('camFollow.x', camX + 50)
+setProperty('camFollow.y', camY)
+
+else
+setProperty('camFollow.x', camX)
+setProperty('camFollow.y', camY)
+end
+end
+
+
+
 end
 end

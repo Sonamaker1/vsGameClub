@@ -1,3 +1,6 @@
+function onCreate()
+precacheMusic('pause_busridehome')
+end
 local allowCountdown = false
 function onStartCountdown()
 	-- Block the first countdown and start a timer of 0.8 seconds to play the dialogue
@@ -26,6 +29,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 
         ]])
 		sayDialogue('');
+playMusic('pause_busridehome', 0.7, true)
 	end
     clearDialogue();
 end

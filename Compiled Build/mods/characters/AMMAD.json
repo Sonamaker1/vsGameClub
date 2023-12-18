@@ -59,8 +59,8 @@
 	"no_antialiasing": false,
 	"image": "characters/AMMAD",
 	"position": [
-		-240,
-		-310
+		-230,
+		-440
 	],
 	"healthicon": "icon-AMMAD",
 	"flip_x": false,
@@ -70,8 +70,8 @@
 		248
 	],
 	"camera_position": [
-		0,
-		0
+		280,
+		450
 	],
 	"sing_duration": 6.1,
 	"scale": 0.51

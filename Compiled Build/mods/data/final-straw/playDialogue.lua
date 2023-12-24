@@ -1,13 +1,31 @@
+function onCreate()
+precacheMusic('pause_busridehome')
+end
 local allowCountdown = false
+
+local getYScoreText = 0;
+local getYHealthBar = 0;
 function onStartCountdown()
 	-- Block the first countdown and start a timer of 0.8 seconds to play the dialogue
 	if not allowCountdown and isStoryMode and not seenCutscene then
 		setProperty('inCutscene', true);
 		runTimer('startDialogue', 0.8);
 		allowCountdown = true;
+        setProperty('iconP1.alpha', 0)
+        setProperty('iconP2.alpha', 0)
+        getYScoreText = getProperty('scoreTxt.y')
+        getYHealthBar = getProperty('healthBar.y')
+        setProperty('scoreTxt.y', 2000)
+        setProperty('healthBar.y', 2000)
+        
 		return Function_Stop;
 	end
-    
+    setProperty('healthBar.y', getYHealthBar)
+    setProperty('scoreTxt.y', getYScoreText)
+    setProperty('iconP1.alpha', 1)
+    setProperty('iconP2.alpha', 1)
+    setProperty('camHUD.alpha', 0)
+
 	return Function_Continue;
 end
 
@@ -42,6 +60,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 			
         ]])
 		sayDialogue('');
+playMusic('pause_busridehome', 0.7, true)
 	end
     clearDialogue();
 end

@@ -1,7 +1,7 @@
 {
 	"animations": [
 		{
-			"loop": false,
+			"loop": true,
 			"offsets": [
 				0,
 				0
@@ -73,17 +73,17 @@
 		-580,
 		-760
 	],
-	"healthicon": "face",
+	"healthicon": "nose",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		166,
+		166,
+		166
 	],
 	"camera_position": [
 		630,
 		840
 	],
-	"sing_duration": 6.1,
+	"sing_duration": 5.1,
 	"scale": 0.4
 }

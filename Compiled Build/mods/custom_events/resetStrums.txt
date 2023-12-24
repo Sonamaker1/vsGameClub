@@ -1,0 +1,5 @@
+TOOL : Save/Load Strums Y
+Value 1 : Store OR Load
+	'1' - Store/save strum location
+	'2' - Load saved strum location
+Value 2 : 

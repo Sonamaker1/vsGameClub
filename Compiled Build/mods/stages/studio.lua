@@ -3,18 +3,20 @@ makeLuaSprite("bg","amstudio",0,0)
 scaleObject('bg', 1.2, 1.2, true)
 addLuaSprite("bg",false)
 
-makeLuaSprite("bg2","BG_GF",1012,425)
-scaleObject('bg2', 0.975, 0.973)
+makeLuaSprite("bg2","BG_GF",1012,430)
+scaleObject('bg2', 0.975, 0.978)
 addLuaSprite("bg2",false)
 
 makeLuaSprite("bg3","FG_GF",1012,430)
-scaleObject('bg3', 0.975, 0.975)
+scaleObject('bg3', 0.975, 0.978)
 addLuaSprite("bg3",false)
 end
 
 function onCreatePost()
 setObjectOrder('bg3', getObjectOrder('gfGroup') + 1)
 setObjectOrder('dadGroup', getObjectOrder('bg3') + 1)
+setProperty('gf.scale.x', 0.875)
+setProperty('gf.scale.y', 0.875)
 end
 
 

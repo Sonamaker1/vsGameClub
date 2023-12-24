@@ -11,7 +11,7 @@ import("CreditsState");
 function super_new(){
 	var G =  FlxG.state;
 
-	trace(Type.typeof("")); 
+	//trace(Type.typeof("")); 
 	
 	//G.grpOptions.members.length = 0;
 	setFunction(CreditsState, "addCreditItem", addCreditItem);
@@ -22,8 +22,21 @@ function super_new(){
 }
 var headers = [];
 function super_runOnce(){
-	//var icon:AttachedSprite = new AttachedSprite('credits/' + G.creditsStuff[i][1]);
-		
+	var G =  FlxG.state;
+	var spr = new FlxSprite(0,0).loadGraphic(Paths.image('menuArrows'));
+	spr.setGraphicSize(FlxG.width, -1);
+	spr.updateHitbox();
+	spr.screenCenter();
+	G.add(spr);
+	
+	var spr = new FlxSprite(0,0).makeGraphic(2,2,0xFF003333);
+	spr.setGraphicSize(FlxG.width+20, FlxG.height+20);
+	spr.updateHitbox();
+	spr.screenCenter();
+	spr.alpha = 0.5;
+	spr.blend = 8;
+	G.insert(G.members.indexOf(G.bg)+1, spr);
+	
 }
 
 var newHeader = "";

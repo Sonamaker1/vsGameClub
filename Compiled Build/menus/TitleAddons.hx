@@ -42,7 +42,6 @@ function super_update(elapsed:Float){
 function super_stepHit(curStep){
         
     if(curStep%4 == 3){
-        trace(Conductor.stepCrochet);
         var state = FlxG.state;
         var logo = state.logoBl;
 
@@ -50,11 +49,19 @@ function super_stepHit(curStep){
             //logo.scale.x = newScale;
             //logo.scale.y = newScale;
             FlxTween.cancelTweensOf(logo);
-            tweenThing = FlxTween.tween( logo.scale , {x: newScale , y: newScale } , Conductor.stepCrochet/1000*1/2, { delay:Conductor.stepCrochet/1000*1/2, ease: FlxEase.sineOut, onComplete:function(){tweenThing = null;} });
+            tweenThing = FlxTween.tween( logo.scale , {x: newScale , y: newScale } , Conductor.stepCrochet/1000, { delay:Conductor.stepCrochet/1000*1/2, ease: FlxEase.sineInOut, onComplete:function(){tweenThing = null;} });
         }   
     }
 }
 
 function super_beatHit(){
- 
+	var state = FlxG.state;
+	var logo = state.logoBl;
+
+	if(logo != null){ 
+		//logo.scale.x = newScale;
+		//logo.scale.y = newScale;
+		FlxTween.cancelTweensOf(logo);
+		tweenThing = FlxTween.tween( logo.scale , {x: newScale , y: newScale } , Conductor.stepCrochet/1000*1/8, { delay:Conductor.stepCrochet/1000*1/2, ease: FlxEase.sineOut, onComplete:function(){tweenThing = null;} });
+	}   
 }

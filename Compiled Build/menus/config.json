@@ -4,8 +4,8 @@
   "options.OptionsState": [["darkModeEnabled",true]],
   "CreditsState": [["globalCreditsAddons", [
             ["Vs GameClub Dev Team"],
-            ["IZincI","am","Director, Musician, Artist, Animator","https://twitter.com/_IZincI_","5E99DF"],
-            ["Latter","latter","Main Programmer\nLua and events","https://twitter.com/latter_T6","5E99DF"],
+            ["IZincI","am","Director, Musician, Artist,\nAnimator, and Charter","https://twitter.com/_IZincI_","5E99DF"],
+            ["Latter","latter","Main Programmer\nLua and Events + Chart fixes","https://twitter.com/latter_T6","5E99DF"],
             ["Winn","winn","Additional Programmer\nMenu UI edits and ThisEngine Source","https://www.youtube.com/@whatify9636","5E99DF"],
             [""]
         ]

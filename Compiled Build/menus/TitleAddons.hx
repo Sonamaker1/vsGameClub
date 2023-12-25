@@ -3,13 +3,16 @@ var newScale = 1;
 function startIntroPost(){
 	var state = FlxG.state;
 	var logo = state.logoBl;
+    state.gfDance.visible = false;
+
+
 	logo.loadGraphic(Paths.image("logo"));
 	logo.setGraphicSize(-1,FlxG.height-120);
 	newScale = logo.scale.x;
 	logo.updateHitbox();
 	logo.screenCenter();
-	logo.x -= 250;
-	logo.y -= 50;
+	logo.x += 50;
+	//logo.y -= 50;
 }
 
 function super_update(elapsed:Float){

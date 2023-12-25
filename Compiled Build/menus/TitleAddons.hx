@@ -15,6 +15,7 @@ function startIntroPost(){
 	//logo.y -= 50;
 }
 
+var tweenThing = null;
 function super_update(elapsed:Float){
 	var state = FlxG.state;
 	var logo = state.logoBl;
@@ -31,20 +32,29 @@ function super_update(elapsed:Float){
         }
     }
 
-    if (logo != null && logo.scale.x > minScale) {
+    if (logo != null && logo.scale.x > minScale && tweenThing==null) {
         logo.scale.x -= decScale * elapsed;
         logo.scale.y -= decScale * elapsed;
     }	
 }
 
+
+function super_stepHit(curStep){
+        
+    if(curStep%4 == 3){
+        trace(Conductor.stepCrochet);
+        var state = FlxG.state;
+        var logo = state.logoBl;
+
+        if(logo != null){ 
+            //logo.scale.x = newScale;
+            //logo.scale.y = newScale;
+            FlxTween.cancelTweensOf(logo);
+            tweenThing = FlxTween.tween( logo.scale , {x: newScale , y: newScale } , Conductor.stepCrochet/1000*1/2, { delay:Conductor.stepCrochet/1000*1/2, ease: FlxEase.sineOut, onComplete:function(){tweenThing = null;} });
+        }   
+    }
+}
+
 function super_beatHit(){
-	var state = FlxG.state;
-	var logo = state.logoBl;
-	
-	if(logo != null){ 
-		logo.scale.x = newScale;
-		logo.scale.y = newScale;
-		//FlxTween.cancelTweensOf(logo);
-		//FlxTween.tween( logo.scale , {x: 1.25 , y: 1.25 } 0.025, { ease: FlxEase.quadInOut });
-    }    
+ 
 }

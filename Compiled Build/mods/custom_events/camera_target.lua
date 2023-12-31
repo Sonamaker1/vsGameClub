@@ -4,22 +4,12 @@ if n == 'camera_target' then
 target = v1
 
 if not (v2 == 'inst') then
-if v2 < 100 then
 setProperty('cameraSpeed', v2)
-else
-setProperty("camFollowPos.x",getProperty("camFollow.x"))
-setProperty("camFollowPos.y",getProperty("camFollow.y"))
-
-end
-
 targetS = v2
 else
 targetS = getProperty('cameraSpeed')
 runTimer('normallol', 0.05)
--- setProperty('cameraSpeed', 10000)
-setProperty("camFollowPos.x",getProperty("camFollow.x"))
-setProperty("camFollowPos.y",getProperty("camFollow.y"))
-
+ setProperty('cameraSpeed', 10000)
 end
 
 

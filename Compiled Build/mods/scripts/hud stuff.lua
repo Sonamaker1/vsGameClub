@@ -12,6 +12,8 @@ setTextSize('scoreTxt2', getTextSize('scoreTxt'))
 addLuaText('scoreTxt2', true)
 setTextColor('scoreTxt2', rgbToHex(getProperty('dad.healthColorArray')))
 setTextColor('scoreTxt', rgbToHex(getProperty('boyfriend.healthColorArray')))
+
+setPropertyFromClass('backend.ClientPrefs', 'data.framerate', 60)
 end
 
 function onUpdate()

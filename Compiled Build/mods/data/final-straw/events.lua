@@ -8,9 +8,10 @@ local color = {
  'blue', 'red', 'green'
 }
 function onCreatePost()
-setProperty('boyfriend.alpha', 0)
-setProperty('bg.alpha', 0)
-setProperty('dad.alpha', 0)
+setProperty('boyfriend.alpha', 0.0001)
+setProperty('bg.alpha', 0.0001)
+triggerEvent("hide studio group")
+setProperty('dad.alpha', 0.0001)
 --setProperty('camHUD.alpha', 0)
 setProperty('camGame.zoom', 0.4)
 
@@ -121,6 +122,7 @@ elseif curStep == 128 then
 removeLuaSprite('The_thing', true)
 setProperty('boyfriend.alpha', 1)
 setProperty('bg.alpha', 1)
+triggerEvent("show studio group")
 setProperty('dad.alpha', 1)
 setProperty('camHUD.alpha', 1)
 camX = 1900
@@ -129,12 +131,14 @@ elseif curStep == 191 then
 setProperty('cameraSpeed', 0.5)
 elseif curStep == 192 then
 doTweenAlpha('1', 'bg', 0,4)
+doTweenAlpha('1group', 'studioGroup', 0,4)
 doTweenAlpha('2', 'boyfriend', 0,4)
 doTweenAlpha('3', 'camHUD', 0,4)
 camX = 1400
 camY = 700
 elseif curStep == 256 then
 doTweenAlpha('1', 'bg', 1,0.01)
+doTweenAlpha('1group', 'studioGroup', 1,0.01)
 doTweenAlpha('2', 'boyfriend', 1,0.01)
 doTweenAlpha('3', 'camHUD', 1,0.01)
 elseif curStep == 259 then
@@ -203,6 +207,8 @@ end
 end
 end
 
+local runOnce = false
+local restoreWindow = false
 function onUpdatePost()
 
 if curStep > 2816 then
@@ -241,7 +247,19 @@ end
 
 if curStep > 2112 and curStep < 2660 then
 setShaderFloat("bg", "iTime", os.clock())
+if not runOnce then
+triggerEvent("hide studio group")
+runOnce = true
 end
+end
+
+if curStep > 2660 then
+if not restoreWindow then
+restoreWindow = true 
+triggerEvent("show studio group")
+end
+end
+
 end
 
 
@@ -259,7 +277,7 @@ if n == 'WBG' then
 if v1 == 'Bon' or v1 == 'Won' then
 setProperty('bg.visible', false)
 else
- setProperty('bg.visible', true)
+setProperty('bg.visible', true)
 end
 end
 end

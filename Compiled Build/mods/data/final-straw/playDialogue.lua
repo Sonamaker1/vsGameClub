@@ -13,15 +13,16 @@ function onStartCountdown()
 		allowCountdown = true;
         setProperty('iconP1.alpha', 0)
         setProperty('iconP2.alpha', 0)
-        getYScoreText = getProperty('scoreTxt.y')
-        getYHealthBar = getProperty('healthBar.y')
-        setProperty('scoreTxt.y', 2000)
-        setProperty('healthBar.y', 2000)
+        setProperty('healthBarBG.alpha', 0.0001)
+        setProperty('healthBar.alpha', 0.0001)
+        setProperty('scoreTxt.alpha', 0.0001)
         
 		return Function_Stop;
 	end
-    setProperty('healthBar.y', getYHealthBar)
-    setProperty('scoreTxt.y', getYScoreText)
+    --setProperty('healthBarBG.y', getYHealthBar)
+    setProperty('scoreTxt.alpha', 1)
+    setProperty('healthBarBG.alpha', 1)
+    setProperty('healthBar.alpha', 1)
     setProperty('iconP1.alpha', 1)
     setProperty('iconP2.alpha', 1)
     setProperty('camHUD.alpha', 0)

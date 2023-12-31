@@ -2,11 +2,14 @@ function onStepHit()
 if curStep == 1156 then
 setProperty('boyfriend.color', getColorFromHex('000000'))
 setProperty('dad.color', getColorFromHex('000000'))
+triggerEvent("hide studio group")
 setProperty('bg.alpha', 0)
 elseif curStep == 1160 then
 doTweenAlpha('1', 'bg', 1,30)
+doTweenAlpha('1Group', 'studioGroup', 1,30)
 elseif curStep == 1224 then
 doTweenAlpha('1', 'bg', 1,7)
+doTweenAlpha('1Group', 'studioGroup', 1,7)
 doTweenColor('2', 'boyfriend', 'ffffff',7)
 doTweenColor('3', 'dad', 'ffffff',7)
 doTweenAlpha('4', 'camHUD', 1,7)

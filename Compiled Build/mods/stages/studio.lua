@@ -22,11 +22,11 @@ end
 
 function onUpdatePost()
 setProperty('bg2.visible', getProperty('bg.visible'))
-setProperty('bg2.alpha', getProperty('bg.alpha'))
+--setProperty('bg2.alpha', getProperty('bg.alpha'))
 
 setProperty('bg3.visible', getProperty('bg.visible'))
-setProperty('bg3.alpha', getProperty('bg.alpha'))
+--setProperty('bg3.alpha', getProperty('bg.alpha'))
 
 setProperty('gf.visible', getProperty('bg.visible'))
-setProperty('gf.alpha', getProperty('bg.alpha'))
+--setProperty('gf.alpha', getProperty('bg.alpha'))
 end

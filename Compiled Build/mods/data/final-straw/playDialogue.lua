@@ -61,7 +61,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 			
         ]])
 		sayDialogue('');
-playMusic('pause_busridehome', 0.7, true)
+playMusic('round-three', 0.7, true)
 	end
     clearDialogue();
 end

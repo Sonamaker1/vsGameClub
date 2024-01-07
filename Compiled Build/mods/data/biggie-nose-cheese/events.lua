@@ -76,7 +76,8 @@ elseif curStep == 832 then
 setProperty('dad.visible', true)
 removeLuaSprite('twk', true)
 elseif curStep == 1152 then
-startVideo('jake looks ass')
+--startVideo('jake looks ass')
+triggerEvent("jake looks ass")
 end
 end
 

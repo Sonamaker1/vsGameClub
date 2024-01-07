@@ -25,5 +25,5 @@ function onEvent(name){
 	}
     
     //studioGroup.color = 0xFF0000;
-    trace(name);
+    //trace(name);
 }

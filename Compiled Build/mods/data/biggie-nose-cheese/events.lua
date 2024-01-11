@@ -24,6 +24,13 @@ scaleObject('ping', 0.4, 0.47, true)
 setProperty('ping.visible', false)
 addLuaSprite('ping', true)
 
+makeAnimatedLuaSprite('videoFrames', 'videoFrames/jake_looks_ass', 0, 0)
+addAnimationByPrefix('videoFrames', 'frames', 'output_0', 12, false)
+setObjectCamera('videoFrames', 'other')
+screenCenter('videoFrames')
+setProperty('videoFrames.visible', false)
+addLuaSprite('videoFrames', true)
+
 makeAnimatedLuaSprite('twk', 'characters/biggie-nose-cheese', getProperty('dad.x'),getProperty('dad.y'))
 addAnimationByPrefix('twk', 'twerk', 'twerk', 24, true)
 setProperty('twk.scale.x', 0.4)
